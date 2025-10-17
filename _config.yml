@@ -25,7 +25,7 @@ description              :
 url                      : "https://www.trevorlmatthews.com"
 giturl                   : "trevorlmatthews.github.io/website"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : trevorlmatthews.github.io
+repository               : trevorlmatthews/trevorlmatthews.github.io
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -317,10 +317,34 @@ compress_html:
 
 # Collections
 collections:
-  projects:
+  # biocv:
+  #   output: true
+  #   permalink: /bio-cv/
+  research:
     output: true
-    permalink: /:collection/:path/
+    permalink: /research/:path/
 
+defaults:
+  # - scope:
+  #     path: ""
+  #     type: biocv
+  #   values:
+  #     layout: splash
+  #     classes: wide
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: single
+      classes: wide
+
+# collections:
+#   projects:
+#     output: true
+#     permalink: /:collection/:path/
+#   bio-cv:
+#     output: true
+#     permalink: /bio-cv/
 # # Defaults
 # defaults:
 #   # _posts
@@ -329,31 +353,25 @@ collections:
 #       type: posts
 #     values:
 #       layout: single
+#       # author_profile: true
+#   # _pages
+#   - scope:
+#       path: "_pages"
+#       type: pages
+#     values:
+#       layout: single
 #       author_profile: true
-#       read_time: true
-#       comments: # true
-#       share: true
-#       related: true
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      # author_profile: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # _projects
-  - scope:
-      path: "_projects"
-      type: posts
-    values:
-      layout: single
+#   # _projects
+#   - scope:
+#       path: "_projects"
+#       type: posts
+#     values:
+#       layout: single
+#   # _bio-cv
+#   - scope:
+#       path: ""
+#       type: biocv
+#     values:
+#       layout: splash
+#       classes: wide
+  
