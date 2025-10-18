@@ -320,6 +320,9 @@ collections:
   # biocv:
   #   output: true
   #   permalink: /bio-cv/
+  projects:
+    output: true
+    permalink: /projects/:path/
   research:
     output: true
     permalink: /research/:path/
@@ -331,6 +334,12 @@ defaults:
   #   values:
   #     layout: splash
   #     classes: wide
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      classes: wide
   - scope:
       path: ""
       type: research
