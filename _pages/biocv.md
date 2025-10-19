@@ -3,7 +3,7 @@ title: ""
 permalink: /bio-cv/
 layout: splash
 classes: wide
-
+author_profile: false
 # sticky table of contents on the right
 # toc: true
 # toc_label: "On this page"

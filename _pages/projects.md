@@ -1,12 +1,13 @@
 ---
 title: ""
 permalink: /projects/
-layout: single
+layout: splash
 classes: wide
 toc: false
+author_profile: false
 ---
 
-## Unsolicited Advice
+## Resources
 
 <!-- Applying to Grad Schools / Fellowships  -->
 <div class="project-card">

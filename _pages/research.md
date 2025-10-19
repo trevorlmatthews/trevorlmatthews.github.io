@@ -1,9 +1,10 @@
 ---
 title: ""
 permalink: /research/
-layout: single
+layout: splash
 classes: wide
 toc: false
+author_profile: false
 ---
 ## Pre-print
 <!-- Expanding Safe Sets with Learning-Based Barrier Functions and Reachability  -->

@@ -329,12 +329,6 @@ collections:
     permalink: /research/:path/
 
 defaults:
-  # - scope:
-  #     path: ""
-  #     type: biocv
-  #   values:
-  #     layout: splash
-  #     classes: wide
   - scope:
       path: ""
       type: projects
