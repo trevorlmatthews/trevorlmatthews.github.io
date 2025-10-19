@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes@4.26.2"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -163,6 +163,8 @@ footer:
 
 
 # Reading Files
+include:
+  - _pages
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -341,11 +343,11 @@ defaults:
       layout: single
       classes: wide
 
-readme_index:
-  enabled: false
+# readme_index:
+#   enabled: false
 
-titles_from_headings:
-  enabled: false
+# titles_from_headings:
+#   enabled: false
 
 # collections:
 #   projects:
