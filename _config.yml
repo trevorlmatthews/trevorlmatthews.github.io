@@ -163,14 +163,12 @@ footer:
 
 
 # Reading Files
-include:
-  - .htaccess
-  - _pages
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
   - .asset-cache
+  - .jekyll-cache
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
@@ -181,6 +179,7 @@ exclude:
   - CHANGELOG
   - config
   - Gemfile
+  - Gemfile.lock
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
